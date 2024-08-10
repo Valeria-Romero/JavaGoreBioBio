@@ -1,28 +1,22 @@
 package clases;
 
 public class Televisor extends ProductoElectrodomestico {
-    private int tamañoPantalla;
+    private int tamanoPantalla;
     private String resolucion;
 
-    public Televisor(String nombre, double precio, int cantidadDisponible, int tamañoPantalla, String resolucion ){
+    public Televisor(String nombre, double precio, int cantidadDisponible, int tamanoPantalla, String resolucion ){
         super(nombre, precio, cantidadDisponible);
-        this.tamañoPantalla = tamañoPantalla;
+        this.tamanoPantalla = tamanoPantalla;
         this.resolucion = resolucion;
     }
 
-    public Televisor(int tamañoPantalla, String resolucion){
-        super(resolucion, tamañoPantalla);
-        // this.resolucion = resolucion
-        // this.tamañoPantalla = tamañoPantalla;
-    }
-
     // Getters & Setters
-    public int getTamañoPantalla() {
-        return tamañoPantalla;
+    public int getTamanoPantalla() {
+        return tamanoPantalla;
     }
 
-    public void setTamañoPantalla(int tamañoPantalla) {
-        this.tamañoPantalla = tamañoPantalla;
+    public void setTamanoPantalla(int tamanoPantalla) {
+        this.tamanoPantalla = tamanoPantalla;
     }
 
     public String getResolucion() {
@@ -36,6 +30,6 @@ public class Televisor extends ProductoElectrodomestico {
     @Override
     public void mostrarInformacion(){
         System.out.println("Resolución: " + this.resolucion);
-        System.out.println("Tamaño de la pantalla: " + this.tamañoPantalla);
+        System.out.println("Tamaño de la pantalla: " + this.tamanoPantalla);
     }
 }
